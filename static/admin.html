@@ -1,0 +1,38 @@
+<h1> Hello Admin.. </h1>
+
+
+<h3>Enter the details for the product to be added</h3>
+<form  action="/products" method="POST">
+  <input type="text" name="op_type" value="insert" hidden>
+    Product name:<br>
+  <input type="text" name="name" required><br>
+  Product description:<br>
+  <input type="text" name="desc" required><br>
+    Cost: <br>
+    <input type="text" name="cost" required><br>
+     <input type="submit" value="Submit">
+</form>
+
+<h3>Enter the product name to be deleted</h3>
+<form  action="/products" method="POST">
+    <input type="text" name="op_type" value="delete" hidden>
+    Product name:<br>
+  <input type="text" name="name" required><br>
+     <input type="submit" value="Submit">
+</form>
+
+<h3>Enter the details for the product to be update</h3>
+<form  action="/products" method="POST">
+  <input type="text" name="op_type" value="update" hidden>
+     Current  name:<br>
+  <input type="text" name="cur_name" required><br>
+    Product name:<br>
+  <input type="text" name="name" required><br>
+  Product description:<br>
+  <input type="text" name="desc" required><br>
+    Cost: <br>
+    <input type="text" name="cost" required><br>
+     <input type="submit" value="Submit">
+</form>
+
+
